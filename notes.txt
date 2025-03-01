@@ -1,0 +1,38 @@
+VENV Commands:
+python3 -m venv venv
+source venv/bin/activate
+
+Backup Command:
+DATE=$(date +"%d-%m-%Y_%I:%M%p"); zip -r "spotter_assessment_$DATE.zip" . -x "venv/*" && mv "spotter_assessment_$DATE.zip" ~/Documents/
+
+Dashboard URL:
+http://127.0.0.1:8000/api/spotter-fuel-dashboard/
+
+Api Curl:
+curl --location 'http://127.0.0.1:8000/api/route/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "start_location": "Chicago, IL, USA",
+    "end_location": "New York, NY, USA"
+}'
+
+curl --location 'http://127.0.0.1:8000/api/route/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "start_location": "Chicago, IL, USA",
+    "end_location": "New York, NY, USA"
+}'
+
+curl --location 'http://127.0.0.1:8000/api/route/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "start_location": "Memphis, USA",
+    "end_location": "Ohio, USA"
+}'
+
+curl --location 'http://127.0.0.1:8000/api/route/' \
+--header 'Content-Type: application/json' \
+--data '{
+    "start_location": "illinois, , USA",
+    "end_location": "washington, USA"
+}'
