@@ -191,11 +191,10 @@ redis-server
 curl --location 'http://127.0.0.1:8000/api/route/' \
 --header 'Content-Type: application/json' \
 --data '{
-"start_location": "Chicago, IL, USA",
-"end_location": "New York, NY, USA"
+    "start_location": "illinois, , USA",
+    "end_location": "washington, USA"
 }'
-```
-
+### Postman collection with examples in code.
 ---
 
 ## 13. Local UI Demo
